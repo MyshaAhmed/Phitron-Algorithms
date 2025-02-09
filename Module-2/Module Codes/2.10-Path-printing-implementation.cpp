@@ -26,8 +26,7 @@ void BFS(int src)
                 parent[child] = par; 
             }
         }
-    }
-    
+    }  
 }
 int main()
 {
