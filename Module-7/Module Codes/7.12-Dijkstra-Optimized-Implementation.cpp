@@ -1,3 +1,4 @@
+// works for negative weight and cycle separately.
 #include <bits/stdc++.h>
 using namespace std;
 vector<pair<int, int>> adj_list[105];
