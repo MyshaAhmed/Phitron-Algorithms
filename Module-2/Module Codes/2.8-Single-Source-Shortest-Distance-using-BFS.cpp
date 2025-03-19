@@ -1,3 +1,4 @@
+// shortest distance == highest level
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> adj_list[1005];
@@ -9,7 +10,7 @@ void BFS(int src)
     queue<int> q;
     q.push(src);
     vis_list[src] = true;
-    level[src] = 0;
+    level[src] = 0; // level of src is 0 
     while(!q.empty())
     {
         int parent = q.front();

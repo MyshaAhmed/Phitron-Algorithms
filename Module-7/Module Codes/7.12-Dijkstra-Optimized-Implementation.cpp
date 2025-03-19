@@ -7,7 +7,7 @@ int dis[105];
 void dijkstra(int src)
 {
     priority_queue<pair<int, int>,vector<pair<int,int>>,greater<pair<int,int>>> pq;
-    pq.push({0,src});
+    pq.push({0,src}); // prothome distance tarpor node push
     dis[src] = 0;
     while (!pq.empty())
     {

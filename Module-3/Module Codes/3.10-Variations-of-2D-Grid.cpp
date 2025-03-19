@@ -21,7 +21,7 @@ void DFS(int si,int sj) //complexity: O(V+E)= O(nxm)
     {
         int ci=si+mov[i].first;
         int cj=sj+mov[i].second;
-        if(valid(ci,cj) &&!vis[ci][cj])
+        if(valid(ci,cj) &&!vis[ci][cj]&& grid[ci][cj]=='.')
             DFS(ci,cj);
     }
 }

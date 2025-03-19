@@ -10,9 +10,12 @@ void BFS(int src)
     vis[src] = true;
     while(!q.empty())
     {
+        // node ber kore anbo
         int par = q.front();
         q.pop();
+        //  node niye kaaj
         cout << par << " ";
+        //  children push korbo
         for(auto child: adj_list[par])
         {
             if(!vis[child]) // if(vis[child]==false)

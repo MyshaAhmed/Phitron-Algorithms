@@ -5,15 +5,8 @@ int main()
     int n,e;
     cin>>n>>e;
     int adj_mat[n][n];
-    // Initialize adjacency matrix with 0s===> 2 ways: for loop and memset
-    // for(int i=0; i<n; i++)
-    //     for(int j=0; j<n; j++)
-    //         adj_mat[i][j] = 0;
-
-    // we will initialize the matrix with 0 using memset
     memset(adj_mat, 0, sizeof(adj_mat));
     
-    // Now, we will take input for the edges and mark them in the adjacency matrix
     while(e--)
     {
         int a,b;
@@ -26,7 +19,7 @@ int main()
             if(i==j)  // if diagonal element, mark it as 1
                 adj_mat[i][j] = 1;
 
-    // Now, we will print the adjacency matrix
+    // print adjacency matrix
     cout<<"Adjacency Matrix:\n";
     for(int i=0; i<n; i++)
     {

@@ -4,7 +4,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 vector<int> adj_list[1005];
-int vis[1005];
+bool vis[1005];
 int level[1005];
 int parent[1005];
 
