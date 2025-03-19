@@ -16,7 +16,7 @@ void BFS(int src)
         q.pop();
         for(auto child:adj_list[par])
         {
-            if(vis[child]&& parent[par]!= child)
+            if(vis[child]&& parent[par]!= child) // if(vis[child]&& parent[child]!= par) is not correct
             {
                 cycle = true;
             }
@@ -55,4 +55,13 @@ int main()
     else
         cout<<"No cycle detected"<<endl;
     return 0;
+
+/* 
+input:
+4 4
+0 1
+1 2
+2 3
+3 1
+*/ 
 }
